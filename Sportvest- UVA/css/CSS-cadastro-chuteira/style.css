@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sessao {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.sessao h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Alfa Slab One', serif;
+    font-weight: bold;
+}
+
+.sessao h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Alfa Slab One', serif;
+}
+
+.sessao-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sessao-links li {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sessao .sessao-links a {
+    text-decoration: none;
+}
+
+.sessao-links li a {
+    color: black;
+}
+
+.sessao-links li a:hover {
+    color: rgb(153, 2, 2);
+}
+
+.sessao-links li:first-of-type a:hover {
+    color: rgb(153, 2, 2);
+    display: inline-block;
+    padding: 2px 5px;
+}
+
+.container {
+    background-color: rgba(234, 234, 234, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(168, 168, 168, 1);
+    text-align: center;
+    width: 400px;
+}
+
+.container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Alfa Slab One', serif;
+}
+
+.container img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+.container p {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #86FF0E 0%, #6DDB00 100%);
+    color: rgba(26, 52, 0, 1);
+    font-size: 16px;
+    font-family: 'Alfa Slab One', serif;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #218838;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 1024px) {
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sessao {
+        padding-right: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .sessao-links {
+        margin-top: 20px;
+    }
+
+}

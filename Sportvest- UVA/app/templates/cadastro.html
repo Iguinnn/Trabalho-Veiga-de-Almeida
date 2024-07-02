@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/CSS-cadastro/style.css">
+    <link rel="stylesheet" href="./css/CSS-index/footer.css">
+    <title>Sportvest- Cadastro</title>
+</head>
+<body>
+    <div class="header">
+        <div class="center">
+        <img src="./images/sportvest.png">
+        
+    </div>
+    </div>
+
+<div class="container">
+    <div class="login">
+        <h2>CRIAR CONTA</h2>
+
+        <label for="name">*E-mail:</label>
+        <input type="email" placeholder="Email" required>
+
+        <label for="name">*Senha:</label>
+        <input type="password" placeholder="Senha" required>
+
+        <label for="name">*CPF:</label>
+        <input type="text" placeholder="CPF" id="cpf" required>
+
+        <label for="name">*CEP:</label>
+        <input type="text" placeholder="CEP" required>
+
+        <div class="rua-numero">
+
+            <div class="campo_rua">
+              <label for="rua">*Rua:</label>
+              <input type="text" id="rua" placeholder="Rua" required>
+            </div>
+            
+            <div class="campo_numero">
+              <label for="numero">*Número:</label>
+              <input type="number" id="numero" placeholder="Número" required>
+            </div>
+
+          </div>
+
+      <button class="criarconta" id="next">
+  Criar conta
+  <img src="./images/estrela.png">
+        </button>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="contato">
+        <img src="./images/contato.png">
+        </div>
+
+        <div class="logo">
+            <img src="./images/sportvest.png">
+        </div>
+    </footer>
+
+    <script>
+    
+        document.getElementById('next').addEventListener('click', function(){
+        window.location.href = 'index.html'
+    
+    });
+    </script>
+
+    <script>
+        document.getElementById('cpf').addEventListener('input', function(e) {
+  var value = e.target.value;
+  var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
+						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
+						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
+						.replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
+						.replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
+  e.target.value = cpfPattern;
+});
+    </script>
+
+</body>
+</html>
+</body>
+</html>

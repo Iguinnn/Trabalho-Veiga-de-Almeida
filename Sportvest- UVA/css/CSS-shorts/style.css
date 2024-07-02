@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.sessao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sessao h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.sessao img {
+    max-width: 13%;
+    height: auto;
+    margin-left: 20px;
+    float: right;
+    padding-right: 20px;
+
+}
+
+
+.content h3 {
+    float: left;
+    padding-left: 30px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    font-size: 35px;
+    font-family: "Alfa Slab One", serif;
+}
+
+.produto-short {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.produto-short img {
+    max-width: 200px;
+    height: auto;
+}
+
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+.produto-info h2 {
+    font-family: "Alfa Slab One", serif;
+    margin-bottom: 10px;
+}
+
+.produto-info .preco-produto {
+    color: #000000;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tamanhos,
+.test {
+    margin-bottom: 10px;
+}
+
+.tamanhos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tamanhos label {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tamanhos input[type="radio"] {
+    display: none;
+}
+
+.tamanhos input[type="radio"]:checked+label {
+    background-color: #928e8e;
+    color: #fff;
+}
+
+.tamanhos label:hover {
+    background-color: #928e8e;
+    color: #fff;
+}
+
+.tamanhos button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.tamanhos button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.test {
+    display: flex;
+    gap: 10px;
+}
+
+.test img {
+    width: 30px;
+    height: 30px;
+}
+
+.carrinho {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(180deg, #86FF0E 0%, #6DDB00 100%);
+    color: rgba(26, 52, 0, 1);
+    font-family: 'Alfa Slab One', serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carrinho:hover {
+    background-color: #218838;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (max-width: 768px) {
+
+    .produto-short {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto-info {
+        padding-left: 0;
+    }
+
+    .produto-info h2 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .produto-short img {
+        max-width: 100%;
+    }
+
+}
+
+.opcao-fav {
+    display: flex;
+    align-items: center;
+    float: right;
+    justify-content: space-between;
+    gap: 60px;
+    padding-right: 70px;
+}

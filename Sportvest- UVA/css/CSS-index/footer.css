@@ -1,0 +1,29 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #971414;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.footer img {
+    width: 195px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        max-width: 150px;
+        margin-bottom: 3px;
+    }
+}

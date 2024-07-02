@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/CSS-cadastro-chuteira/style.css">
+    <link rel="stylesheet" href="./css/CSS-home/header.css">
+    <link rel="stylesheet" href="./css/CSS-index/footer.css">
+    <title>Sportvest</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contato">
+            <a href="home.html">
+                <img src="./images/logo.png" alt="Contato">
+            </a>
+        </div>
+    
+        <ul class="links">
+            <li><a href="home.html">Chuteiras</a></li>
+            <li><a href="shorts.html">Shorts</a></li>
+            <li><a href="home.html">Camisetas</a></li>
+        </ul>
+    </header>
+
+    <div class="center">
+        <div class="sessao">
+            <h1>Bem Vindo, Gerente!</h1>
+            <h2>Escolha uma das opções abaixo para dar prosseguimento:</h2>
+            <ul class="sessao-links">
+                <li class="active"><a href="cadastro-chuteira.html">1- Cadastre uma chuteira</a></li>
+                <li><a href="cadastro-short.html">2- Cadastre um short</a></li>
+                <li><a href="cadastro-camiseta.html">3- Cadastre uma camiseta</a></li>
+                <li><a href="administrar-lireco.html">4- Administrar preços</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h1>Cadastre a chuteira!</h1>
+            <img src="./images/chuteira.png" alt="Chuteira">
+            <label>Nome:</label>
+            <p>Chuteira Nike HyperVenom Mercurial</p>
+            <button id="proximo">CONFIRMAR CADASTRO</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="contato">
+            <img src="./images/contato.png">
+        </div>
+        <div class="logo">
+            <img src="./images/sportvest.png">
+        </div>
+    </footer>
+
+    <script>
+    
+      document.getElementById('proximo').addEventListener('click', function(){
+      window.location.href = 'cadastro-chuteira2.html'
+  
+  });
+  </script>
+
+</body>
+</html>

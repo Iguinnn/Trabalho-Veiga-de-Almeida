@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  padding: 0 2%;
+  height: 75px;
+  background-color: #971414;
+  border-bottom: 0.3rem solid rgb(247, 118, 118);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .contato img {
+  max-width: 200px;
+  height: auto;
+}
+
+.header .links {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+}
+
+.header .links li {
+  display: inline;
+}
+
+.header .links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.header .links a:hover {
+  color: rgb(247, 118, 118);
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 1%;
+  }
+
+  .header .contato img {
+    max-width: 150px;
+  }
+
+  .header .links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    padding: 0 1%;
+  }
+
+  .header .links {
+    gap: 10px;
+  }
+}

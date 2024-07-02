@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sessao {
+    padding: 20px;
+}
+
+.sessao h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: bold;
+}
+
+.sessao h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Alfa Slab One", serif;
+}
+
+.sessao-links li {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.sessao-links li a {
+    color: rgb(0, 0, 0);
+
+}
+
+.sessao .sessao-links a {
+    text-decoration: none;
+}
+
+.sessao-links li a:hover {
+    color: rgb(153, 2, 2);
+    display: inline-block;
+    padding: 2px 5px;
+}
